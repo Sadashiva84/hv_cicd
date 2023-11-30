@@ -12,6 +12,7 @@ Set up a Jenkins pipeline to automate the testing and deployment of a simple Pyt
 
 - Install Jenkins on a virtual machine or use a cloud-based Jenkins service.
 - Configure Jenkins with Python and any necessary libraries.
+![setup](images/setup-jenkins-01-unlock-jenkins-page.jpg)
 
 ### 2. Source Code:
 
@@ -26,7 +27,7 @@ Set up a Jenkins pipeline to automate the testing and deployment of a simple Pyt
   - **Test:** Run unit tests using a testing framework like pytest.
   - **Deploy:** If tests pass, deploy the application to a staging environment.
  
-'''
+```
 
 pipeline {
     agent any
@@ -70,7 +71,7 @@ pipeline {
     }
 }
 
-'''
+```
 
 ### 4. Triggers:
 
