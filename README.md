@@ -40,7 +40,7 @@ Set up a Jenkins pipeline to automate the testing and deployment of a simple Pyt
 
 ### 7. Submission:
 
-- Provide the URL to the [GitHub repository](provide-repo-url) with the `Jenkinsfile` and updated `README.md`.
+- The URL to the [GitHub repository](provide-repo-url) with the `Jenkinsfile` and updated `README.md`.
 - Include screenshots of the Jenkins pipeline showing the build, test, and deployment stages.
 
 
@@ -81,6 +81,6 @@ Implement a CI/CD workflow using GitHub Actions for a Python application.
 
 ### 6. Submission:
 
-- Provide the URL to the [GitHub repository](provide-repo-url) with the workflow file and updated `README.md`.
+- The URL to the [GitHub repository](provide-repo-url) with the workflow file and updated `README.md`.
 - Include screenshots of the GitHub Actions workflow runs showing successful execution of all steps.
 
