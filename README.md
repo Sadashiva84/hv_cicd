@@ -25,6 +25,50 @@ Set up a Jenkins pipeline to automate the testing and deployment of a simple Pyt
   - **Build:** Install dependencies using pip.
   - **Test:** Run unit tests using a testing framework like pytest.
   - **Deploy:** If tests pass, deploy the application to a staging environment.
+ 
+'''
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    // Install dependencies using pip
+                    sh 'pip install -r requirements.txt'
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                script {
+                    // Run unit tests using pytest
+                    sh 'pytest'
+                }
+            }
+        }
+
+        stage('Deploy') {
+            when {
+                expression { currentBuild.resultIsBetterOrEqualTo('SUCCESS') }
+            }
+            steps {
+                script {
+                    // Deploy to staging environment (replace with your deployment script)
+                    sh './deploy-to-staging.sh'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Clean up or perform any post-build actions here
+        }
+    }
+}
+'''
 
 ### 4. Triggers:
 
