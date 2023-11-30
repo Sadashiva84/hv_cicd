@@ -1,6 +1,6 @@
 # hv_cicd
 
-# 1 Jenkins CI/CD Pipeline for Flask Application
+# 1. Jenkins CI/CD Pipeline for Flask Application
 
 ## Objective
 
